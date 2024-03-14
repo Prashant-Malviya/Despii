@@ -216,7 +216,7 @@ const Hero = () => {
           <div className="relative mx-auto max-w-6xl flex z-50 hidden lg:block md:block">
             {selectedLanguage === "English" && (
               <div className="text-center">
-                <h1 className="text-5xl font-bold tracking-tight  sm:text-6xl text-white mx-auto mt-24 font-manrope">
+                <h1 className="text-5xl md:text-4xl font-bold tracking-tight  sm:text-6xl text-white mx-auto mt-24 font-manrope">
                   Revisiting the urban{" "}
                   <motion.span
                     className="bg-gradient-to-r from-amber-600 via-amber-700 to-pink-700 text-transparent bg-clip-text"
@@ -228,7 +228,7 @@ const Hero = () => {
                     transport industry
                   </motion.span>
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-white max-w-3xl mx-auto font-manrope">
+                <p className="text-lg leading-8 text-white max-w-3xl mx-auto font-manrope ">
                   The smart moped hailing app eco-friendly based on shared
                   economy, providing swift and hassle-free rides through
                   bustling city streets.

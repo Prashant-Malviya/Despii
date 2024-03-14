@@ -13,7 +13,7 @@ import BikeAccessories from "../components/BikeAccessories";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <Hero />
       <Features />
       <FeaturesMain />
@@ -25,7 +25,7 @@ const Home = () => {
       <BikeAccessories />
       <Cta />
       <Footer />
-    </>
+    </div>
   );
 };
 
