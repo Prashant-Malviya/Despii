@@ -10,10 +10,15 @@ import Cta from "../components/Cta";
 import Footer from "../components/Footer";
 import DeliveryDetails from "../components/DeliveryDetails";
 import BikeAccessories from "../components/BikeAccessories";
+import {Helmet} from "react-helmet"
 
 const Home = () => {
   return (
     <div>
+    <Helmet>
+      <title>Urban Transport</title>
+      <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
+    </Helmet>
       <Hero />
       <Features />
       <FeaturesMain />

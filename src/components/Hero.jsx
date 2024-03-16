@@ -11,6 +11,7 @@ import bike from "../utils/32 1.png";
 import appIcon from "../utils/appIcon.png";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 import { FaChevronDown } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -189,13 +190,39 @@ const Hero = () => {
                       </div>
                     </Menu.Items>
                   </Menu>
-                  <div className="py-6">
+
+                  <div className="py-2">
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
                       Log in
                     </a>
+                  </div>
+
+                  <div className="py-2">
+                    <NavLink
+                      to="route1"
+                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    >
+                      Route1
+                    </NavLink>
+                  </div>
+                  <div className="py-2">
+                    <NavLink
+                      to="route2"
+                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    >
+                      Route2
+                    </NavLink>
+                  </div>
+                  <div className="py-2">
+                    <NavLink
+                      to="route3"
+                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    >
+                      Route3
+                    </NavLink>
                   </div>
                 </div>
               </div>
