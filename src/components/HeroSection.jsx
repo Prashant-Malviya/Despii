@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleDarkMode, selectDarkMode } from "../store/darkModeSlice";
 import { setLanguage, selectLanguage } from "../store/languageSlice";
 import { Menu, Transition, Dialog } from "@headlessui/react";
-import HeroBg from "../utils/bg-main.png";
+// import HeroBg from "../utils/bg-main.png";
 import { heroSvg } from "../svgs";
 import { MdUnarchive } from "react-icons/md";
 import bike from "../utils/32 1.png";
@@ -13,8 +13,9 @@ import { motion } from "framer-motion"; // Import motion from Framer Motion
 import { FaChevronDown } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import HeroBg2 from './img/bg-main2.png'
 
-const Hero = () => {
+const HeroSection = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dispatch = useDispatch();
   const isDarkMode = useSelector(selectDarkMode);
@@ -214,18 +215,18 @@ const Hero = () => {
 
                   <div className="py-2">
                     <NavLink
-                      to="HeroSection"
+                      to="route1"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
-                      Hero Section1
+                      Route1
                     </NavLink>
                   </div>
                   <div className="py-2">
                     <NavLink
-                      to="HeroSection2"
+                      to="route2"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
-                      Hero Section2
+                      Route2
                     </NavLink>
                   </div>
                   <div className="py-2">
@@ -242,21 +243,21 @@ const Hero = () => {
           </Dialog>
         </header>
 
-        <div className="relative  overflow-hidden h-[30rem]  md:h-screen lg:h-screen z-40">
+        <div className="relative  overflow-hidden h-[30rem]  md:h-screen lg:h-screen z-40 bg-black filter opacity-95">
           <img
-            src={HeroBg}
-            alt=""
+            src={HeroBg2}
+            alt="HeroBg2"
             className="absolute h-full w-full object-cover"
           />
           <div className="relative flex justify-center items-center lg:pt-[25rem] pt-[20rem] ">
             <img src={bike} alt="bike" className="absolute  object-cover " />
           </div>
-          <div className=" flex relative h-96  w-full bg-black opacity-80 filter blur-3xl rounded-t-full justify-center items-center mx-auto bottom-10 lg:hidden md:hidden  z-10"></div>
+          <div className=" flex relative h-96  w-full bg-black filter opacity-40  blur-3xl rounded-t-full justify-center items-center mx-auto bottom-10 lg:hidden md:hidden  z-10"></div>
           <div className="relative mx-auto max-w-6xl flex z-50 hidden lg:block md:block">
             {selectedLanguage === "English" && (
               <div className="text-center">
                 <h1 className="lg:text-5xl md:text-4xl font-bold tracking-tight  sm:text-6xl text-white mx-auto mt-24 font-manrope">
-                  Revisiting the urban{" "}
+                The Future of Urban{" "}
                   <motion.span
                     className="bg-gradient-to-r from-amber-600 via-amber-700 to-pink-700 text-transparent bg-clip-text"
                     initial={{ opacity: 0, y: 50 }}
@@ -264,13 +265,11 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     style={{ display: "inline-block" }}
                   >
-                    transport industry
+                    Transport
                   </motion.span>
                 </h1>
                 <p className="mb-4 text-lg leading-8 text-white max-w-3xl mx-auto font-manrope ">
-                  The smart moped hailing app eco-friendly based on shared
-                  economy, providing swift and hassle-free rides through
-                  bustling city streets.
+                Experience the future of urban transport with our eco-friendly bike taxi service, providing swift and hassle-free rides through bustling city streets.
                 </p>
               </div>
             )}
@@ -344,4 +343,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

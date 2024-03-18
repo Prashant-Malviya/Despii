@@ -27,7 +27,7 @@ const FeaturesMain = () => {
             <span
               className="bg-gradient-to-r from-amber-600
           via-amber-700 to-pink-700 text-transparent bg-clip-text 
-          font-bold lg:text-center text-left ml-2"
+          font-bold lg:text-center text-left"
             >
               Experience
             </span>

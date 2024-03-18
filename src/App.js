@@ -4,10 +4,12 @@ import Home from "./pages/Home";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./store/index";
-import Route1 from "./components/Routes/Route1";
-import Route2 from "./components/Routes/Route2";
+// import Route1 from "./components/Routes/Route1";
+// import Route2 from "./components/Routes/Route2";
 import Route3 from "./components/Routes/Route3";
 import {Helmet} from "react-helmet"
+import HeroSection from "./components/HeroSection";
+import HeroSection2 from "./components/HeroSection2";
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/route1" element={<Route1 />} />
-            <Route path="/route2" element={<Route2 />} />
+            <Route path="/HeroSection" element={<HeroSection />} />
+            <Route path="/HeroSection2" element={<HeroSection2 />} />
             <Route path="/route3" element={<Route3 />} />
           </Routes>
         </BrowserRouter>
