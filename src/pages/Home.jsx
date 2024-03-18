@@ -27,8 +27,22 @@ const Home = () => {
         />
         <h1>Despii: Transport,Save Time</h1>
       </Helmet>
-      <h1 className="hidden p-0 m-0">Despii: Revisiting the urban transport industry</h1>
-      <h2 className="hidden p-0 m-0">Despii: Revisiting the urban transport industry</h2>
+       
+      <Helmet>
+      <Hero />
+      <Features />
+      <FeaturesMain />
+      <WorkingExplainMain />
+      <HeroMap />
+      <BannerInfo />
+      <CarBanner />
+      <DeliveryDetails />
+      <BikeAccessories />
+      <Cta />
+      <Footer />
+      </Helmet>
+      
+
       <Hero />
       <Features />
       <FeaturesMain />
