@@ -8,6 +8,7 @@ import rearPassengerBackseat from "./AccessoriesImg/Rear Passenger Backseat.png"
 import topCase from "./AccessoriesImg/Top Case.png";
 import phoneHolder from "./AccessoriesImg/PhoneHolder.png";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 function BikeAccessories() {
   const selectedLanguage = useSelector(selectLanguage);
@@ -32,6 +33,7 @@ function BikeAccessories() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 lg:gap-10 content-center text-center">
             <div className="flex flex-col justify-center items-center">
+            <Link to="/route1">
               <img
                 src={helmetImg}
                 alt="helmet"
@@ -39,6 +41,7 @@ function BikeAccessories() {
               />
               <p className=" text-white text-xl right-10">Helmets</p>
               <div className="relative px-12 py-5 rounded-full bg-gradient-to-r from-orange-500  to-pink-300 -top-24 right-7 filter blur-3xl  "></div>
+              </Link>
             </div>
 
             <div className="flex flex-col justify-center items-center">

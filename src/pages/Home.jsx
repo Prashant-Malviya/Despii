@@ -15,13 +15,18 @@ import {Helmet} from "react-helmet"
 const Home = () => {
   return (
     <div>
-    <Helmet>
-      <title>Urban Transport</title>
-      <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
-      <h1>Despii: Welcome To Home Page</h1>
-      <h2>Transport Make Easy</h2>
-      <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
-    </Helmet>
+     <Helmet>
+        <title>Urban Transport - Smart Moped Hailing App</title>
+        <meta
+          name="description"
+          content="Welcome to Urban Transport! The smart moped hailing app, eco-friendly and based on a shared economy, providing swift and hassle-free rides through bustling city streets."
+        />
+        <meta
+          name="keywords"
+          content="Urban Transport, Moped Hailing, Shared Economy, Eco-friendly Rides"
+        />
+        <h1>Despii: Transport,Save Time</h1>
+      </Helmet>
       <Hero />
       <Features />
       <FeaturesMain />
