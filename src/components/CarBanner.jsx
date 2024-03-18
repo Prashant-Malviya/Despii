@@ -7,10 +7,18 @@ import cycle from "../utils/cycle.png";
 import scotter from "../utils/scotter.png";
 import car from "../utils/car.png";
 import truck from "../utils/truck.png";
+import { Helmet } from "react-helmet";
 const CarBanner = () => {
   const selectedLanguage = useSelector(selectLanguage);
   return (
-    <div className="bg-neutral-900 p-10 ">
+    <>
+     <Helmet>
+      <title>Urban Transport</title>
+      <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
+      
+      <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
+    </Helmet>
+      <div className="bg-neutral-900 p-10 ">
       {selectedLanguage === "English" && (
         <div className="flex flex-col space-y-28 font-manrope justify-center items-center mt-10 relavive">
           <h2 className="text-white text-5xl ">
@@ -103,6 +111,7 @@ const CarBanner = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

@@ -7,12 +7,20 @@ import rightHandGlove from "./AccessoriesImg/Right Hand Glove.png";
 import rearPassengerBackseat from "./AccessoriesImg/Rear Passenger Backseat.png";
 import topCase from "./AccessoriesImg/Top Case.png";
 import phoneHolder from "./AccessoriesImg/PhoneHolder.png";
+import { Helmet } from "react-helmet";
 
 function BikeAccessories() {
   const selectedLanguage = useSelector(selectLanguage);
 
   return (
-    <div className="bg-neutral-900">
+    <>
+     <Helmet>
+      <title>Urban Transport</title>
+      <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
+      
+      <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
+    </Helmet>
+      <div className="bg-neutral-900">
       {selectedLanguage === "English" && (
         <div className="flex flex-col space-y-2 font-manrope justify-center items-center text-center p-10 relative">
           <h2 className="text-white text-5xl mb-5 mt-5 p-10">
@@ -169,6 +177,7 @@ function BikeAccessories() {
       )}
 
     </div>
+    </>
   );
 }
 

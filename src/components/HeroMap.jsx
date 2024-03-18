@@ -7,10 +7,18 @@ import img1 from "../utils/grid1.png";
 import img2 from "../utils/grid2.png";
 import img3 from "../utils/grid3.png";
 import img4 from "../utils/grid4.png";
+import { Helmet } from "react-helmet";
 const HeroMap = () => {
   const selectedLanguage = useSelector(selectLanguage);
   return (
-    <div className="bg-neutral-900 lg:p-20 py-20 px-10 font-manrope">
+   <>
+   <Helmet>
+      <title>Urban Transport</title>
+      <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
+      
+      <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
+    </Helmet>
+     <div className="bg-neutral-900 lg:p-20 py-20 px-10 font-manrope">
       {selectedLanguage === "English" && (
         <div className="flex flex-col">
           <p className="text-white  text-5xl lg:text-6xl lg:text-center text-left mt-5 ">
@@ -65,6 +73,7 @@ const HeroMap = () => {
         <img src={img4} alt="map-image" className="w-full h-auto" />
       </div>
     </div>
+   </>
   );
 };
 

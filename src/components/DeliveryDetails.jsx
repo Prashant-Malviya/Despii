@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { selectLanguage } from "../store/languageSlice";
 import bgImg from "./img/bgImg.png";
+import { Helmet } from "react-helmet";
 
 function DeliveryDetails() {
   const selectedLanguage = useSelector(selectLanguage);
@@ -26,7 +27,16 @@ function DeliveryDetails() {
 
 
   return (
-    <div className=" h-auto  bg-neutral-900">
+  <>
+
+<Helmet>
+      <title>Urban Transport</title>
+      <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
+      
+      <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
+    </Helmet>
+
+<div className=" h-auto  bg-neutral-900">
       <div className="w-auto h-auto filter blur-xl bg-black absolute opacity-40"></div>
       <div className="w-auto h-auto filter blur-3xl bg-black absolute opacity-40"></div>
 
@@ -123,6 +133,7 @@ function DeliveryDetails() {
         </div>
       )}
     </div>
+  </>
   );
 }
 

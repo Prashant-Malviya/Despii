@@ -12,6 +12,7 @@ import appIcon from "../utils/appIcon.png";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 import { FaChevronDown } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,13 +38,19 @@ const Hero = () => {
   return (
     <>
       <div>
+      <Helmet>
+      <meta property="og:title" content="Despii : Transport Made Easy" />
+      <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
+      
+      <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
+    </Helmet>
         <header className="absolute inset-x-0 top-0 z-50 ">
           <nav
             className="flex items-center justify-between p-6 lg:px-8 "
             aria-label="Global"
           >
             <div className="flex lg:flex-1 p-5">
-              <span className="sr-only">Your Company</span>
+              <h1 className="sr-only">Your Company</h1>
               <motion.img
                 className="h-8 w-auto"
                 src={appIcon}
