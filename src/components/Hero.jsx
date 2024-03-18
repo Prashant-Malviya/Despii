@@ -37,19 +37,16 @@ const Hero = () => {
 
   return (
     <>
-      <div>
-        <Helmet>
-          <meta property="og:title" content="Despii : Transport Made Easy" />
-          <meta
-            name="description"
-            content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."
-          />
+      <Helmet>
+        <meta property="og:title" content="Despii : Transport Made Easy" />
+        <meta
+          name="description"
+          content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."
+        />
 
-          <meta
-            name="keywords"
-            content="Transport,Easy Ride,Transport Service"
-          />
-        </Helmet>
+        <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
+      </Helmet>
+      <div>
         <header className="absolute inset-x-0 top-0 z-50 ">
           <nav
             className="flex items-center justify-between p-6 lg:px-8 "
@@ -57,15 +54,17 @@ const Hero = () => {
           >
             <div className="flex lg:flex-1 p-5">
               <span className="sr-only">Your Company</span>
-              <motion.img
-                className="h-8 w-auto"
-                src={appIcon}
-                alt=""
-                initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                style={{ display: "inline-block" }}
-              />
+              <a href="/">
+                <motion.img
+                  className="h-8 w-auto"
+                  src={appIcon}
+                  alt="app icon"
+                  initial={{ opacity: 0, y: -100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  style={{ display: "inline-block" }}
+                />
+              </a>
             </div>
             <div className="flex lg:hidden">
               <button
@@ -130,9 +129,9 @@ const Hero = () => {
             <div className="fixed inset-0 z-50" />
             <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10 bg-slate-900/90 ">
               <div className="flex items-center justify-between">
-                <a href="#" className="-m-1.5 p-1.5">
+                <a href="/" className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
-                  <img className="h-8 w-auto" src={appIcon} alt="" />
+                  <img className="h-8 w-auto" src={appIcon} alt="appicon" />
                 </a>
                 <button
                   type="button"
@@ -250,7 +249,7 @@ const Hero = () => {
             className="absolute h-full w-full object-cover"
           />
           <div className="relative flex justify-center items-center lg:pt-[25rem] pt-[20rem] ">
-            <img src={bike} alt="" className="absolute  object-cover " />
+            <img src={bike} alt="bike" className="absolute  object-cover " />
           </div>
           <div className=" flex relative h-96  w-full bg-black opacity-80 filter blur-3xl rounded-t-full justify-center items-center mx-auto bottom-10 lg:hidden md:hidden  z-10"></div>
           <div className="relative mx-auto max-w-6xl flex z-50 hidden lg:block md:block">

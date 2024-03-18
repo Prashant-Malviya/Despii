@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
      <Helmet>
-        <title>Urban Transport - Smart Moped Hailing App</title>
+        <title>Despii - Smart Moped Hailing App</title>
         <meta
           name="description"
           content="Welcome to Urban Transport! The smart moped hailing app, eco-friendly and based on a shared economy, providing swift and hassle-free rides through bustling city streets."
@@ -28,6 +28,7 @@ const Home = () => {
         <h1>Despii: Transport,Save Time</h1>
       </Helmet>
       <h1 className="hidden p-0 m-0">Despii: Revisiting the urban transport industry</h1>
+      <h2 className="hidden p-0 m-0">Despii: Revisiting the urban transport industry</h2>
       <Hero />
       <Features />
       <FeaturesMain />

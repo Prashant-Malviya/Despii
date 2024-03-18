@@ -34,9 +34,16 @@ const Footer = () => {
           <div className="mx-auto flex space-x-10">
             <FaSnapchatGhost className="text-2xl text-white" />
             <FaTiktok className="text-2xl text-white" />
-            <FaFacebookF className="text-2xl text-white" />
-            <FaInstagram className="text-2xl text-white" />
-            <MdEmail className="text-2xl text-white" />
+            <a href="https://www.facebook.com/">
+              <FaFacebookF className="text-2xl text-white" />
+            </a>
+            <a href="https://www.instagram.com/">
+              <FaInstagram className="text-2xl text-white" />
+            </a>
+
+            <a href="https://mail.google.com/mail/u/0/#inbox">
+              <MdEmail className="text-2xl text-white" />
+            </a>
           </div>
         </div>
         {selectedLanguage === "English" && (
