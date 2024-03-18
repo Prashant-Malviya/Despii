@@ -47,20 +47,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <div itemscope itemtype="http://schema.org/WebPage">
-        <meta itemprop="name" content="Despii" />
-        <meta itemprop="description" content="Welcome to despii which makes your ride faster. Despii helps fast droping service. Despii Also helps reach a preferred location" />
-        <meta itemprop="url" content="https://despii-ten.vercel.app/" />
-        <div
-          itemprop="publisher"
-          itemscope
-          itemtype="http://schema.org/Organization"
-        >
-          <meta itemprop="name" content="Despii" />
-          <link itemprop="url" href="https://despii-ten.vercel.app/" />
-          <link itemprop="logo" href="src\utils\bg-main.png" />
-        </div>
-      </div>
+      
 
       <Hero />
       <Features />

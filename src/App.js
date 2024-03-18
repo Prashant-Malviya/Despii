@@ -23,6 +23,7 @@ function App() {
           />
           <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
           </Helmet>
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/route1" element={<Route1 />} />
