@@ -18,7 +18,8 @@ const Home = () => {
     <Helmet>
       <title>Urban Transport</title>
       <meta name="description" content="The smart moped hailing app eco-friendly based on shared economy, providing swift and hassle-free rides through bustling city streets."/>
-      
+      <h1>Despii: Welcome To Home Page</h1>
+      <h2>Transport Make Easy</h2>
       <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
     </Helmet>
       <Hero />
