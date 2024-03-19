@@ -36,16 +36,7 @@ const Home = () => {
         </h2>
       </Helmet>
 
-      <Helmet>
-        <meta property="og:title" content="Despii" />
-        <meta
-          property="og:description"
-          content="Urban Transport, Moped Hailing, Shared Economy, Eco-friendly Rides"
-        />
-        <meta property="og:url" content="https://despii-ten.vercel.app/" />
-        <meta property="og:image" content="src\utils\bg-main.png" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+     
 
       
 
