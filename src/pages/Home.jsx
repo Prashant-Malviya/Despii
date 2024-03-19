@@ -34,6 +34,9 @@ const Home = () => {
         <h2 className="hiddedn" rel="canonical">
           Share your ride and dash in no time!
         </h2>
+
+        <a href="https://despii-ten.vercel.app/" rel="canonical"></a>
+
       </Helmet>
 
      
