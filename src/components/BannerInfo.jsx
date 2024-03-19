@@ -6,17 +6,17 @@ const BannerInfo = () => {
   return (
     <div className="bg-neutral-900 lg:p-20 py-20 px-10 font-manrope">
       {selectedLanguage === "English" && (
-        <div className="flex flex-col bg-neutral-600/10 p-10 rounded-2xl shadow-lg">
+        <div className="flex flex-col bg-neutral-600/10 p-auto rounded-2xl shadow-lg">
           <p
             className="bg-gradient-to-r from-amber-600
           via-pink-950 to-purple-950 text-transparent bg-clip-text 
-         lg:text-center text-left ml-2 text-6xl h-auto "
+         lg:text-center text-left ml-2 text-5xl h-auto "
           >
             Peers to Peers delivery & Store Delivery
           </p>
           <p
             className="text-white
-           lg:text-center text-left ml-2 text-6xl mt-4"
+           lg:text-center text-left ml-2 text-5xl mt-4"
           >
             With Despii Delivery send & receive
           </p>

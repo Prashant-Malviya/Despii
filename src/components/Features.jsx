@@ -85,7 +85,7 @@ const Features = () => {
             OUR MISSION
           </h2>
         </div>
-        <p className="mt-10  tracking-tight text-white text-6xl font-manrope">
+        <p className="mt-10  tracking-tight text-white text-5xl font-manrope">
           Introducing the <br /> Next Generation of <br /> Moped Mobility
         </p>
         <Link rel="canonical">

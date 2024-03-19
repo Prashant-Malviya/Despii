@@ -22,7 +22,7 @@ const FeaturesMain = () => {
           <span className="bg-gradient-to-r from-amber-600 via-amber-700 to-pink-700 text-transparent bg-clip-text text-xl font-bold lg:text-center text-left">
             App Features
           </span>
-          <p className="text-white  text-5xl lg:text-6xl lg:text-center text-left mt-5 ">
+          <p className="text-white  text-4xl lg:text-6xl lg:text-center text-left mt-5 ">
             Enhancing Your Ride
             <span
               className="bg-gradient-to-r from-amber-600
