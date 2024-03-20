@@ -37,6 +37,7 @@ const Hero = () => {
 
   return (
     <>
+      {/* Meta tags for seo  */}
       <Helmet>
         <meta property="og:title" content="Despii : Transport Made Easy" />
         <meta
@@ -46,7 +47,9 @@ const Hero = () => {
 
         <meta name="keywords" content="Transport,Easy Ride,Transport Service" />
       </Helmet>
+
       <div>
+        {/* Header Section  */}
         <header className="absolute inset-x-0 top-0 z-50 ">
           <nav
             className="flex items-center justify-between p-6 lg:px-8 "
@@ -54,7 +57,7 @@ const Hero = () => {
           >
             <div className="flex lg:flex-1 p-5">
               <span className="sr-only">Your Company</span>
-              <a href="/">
+              <a href="/" aria-label="Home">
                 <motion.img
                   className="h-8 w-auto"
                   src={appIcon}
@@ -71,6 +74,7 @@ const Hero = () => {
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
                 onClick={() => setMobileMenuOpen(true)}
+                aria-label="Open Menu"
               >
                 <span className="sr-only">Open main menu</span>
                 <MdUnarchive className="h-6 w-6" aria-hidden="true" />
@@ -78,7 +82,10 @@ const Hero = () => {
             </div>
             <Menu as="div" className="relative  text-left hidden lg:block">
               <div>
-                <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-100 bg-white/20  rounded-md shadow-sm hover:bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ">
+                <Menu.Button
+                  className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-100 bg-white/20  rounded-md shadow-sm hover:bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 "
+                  aria-label="Language Menu"
+                >
                   {selectedLanguage}
                   <FaChevronDown
                     className="-mr-1 ml-2 h-5 w-5"
@@ -161,7 +168,7 @@ const Hero = () => {
                   </div>
                   <Menu as="div" className="text-left ">
                     <div>
-                      <Menu.Button className="text-left flex w-full px-4 py-2 text-sm font-medium text-gray-100 bg-white/20  rounded-md shadow-sm hover:bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ">
+                      <Menu.Button className="text-left flex w-full px-4 py-2 text-sm font-medium text-gray-100 bg-white/20  rounded-md shadow-sm hover:bg-gray-50/50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
                         {selectedLanguage}
                         <FaChevronDown
                           className="-mr-1 ml-2 h-5 w-5"
@@ -245,7 +252,7 @@ const Hero = () => {
         <div className="relative  overflow-hidden h-[30rem]  md:h-screen lg:h-screen z-40">
           <img
             src={HeroBg}
-            alt=""
+            alt="City Image"
             className="absolute h-full w-full object-cover"
           />
           <div className="relative flex justify-center items-center lg:pt-[25rem] pt-[20rem] ">
@@ -285,6 +292,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     style={{ display: "inline-block" }}
+                    alt="Icône Despii"
                   />
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-white max-w-3xl mx-auto font-manrope">
@@ -330,6 +338,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     style={{ display: "inline-block" }}
+                    alt="Icône de l'application"
                   />
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-white max-w-3xl mx-auto font-manrope">

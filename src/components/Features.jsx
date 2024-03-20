@@ -24,7 +24,7 @@ const Features = () => {
         <div className="mx-auto lg:grid max-w-2xl grid-cols-1 gap-x-8   lg:mx-0 lg:max-w-none lg:grid-cols-2 ">
           <img
             src={phoneimg}
-            alt="Product screenshot"
+            alt="Phone Image"
             className=" h-full w-auto mt-10"
           />
           {selectedLanguage === "English" && (

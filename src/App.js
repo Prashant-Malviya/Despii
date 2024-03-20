@@ -10,6 +10,7 @@ import Route3 from "./components/Routes/Route3";
 import {Helmet} from "react-helmet"
 import HeroSection from "./components/HeroSection";
 import HeroSection2 from "./components/HeroSection2";
+import Herotwo from "./components/Extra Component/Herotwo";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/HeroSection" element={<HeroSection />} />
             <Route path="/HeroSection2" element={<HeroSection2 />} />
             <Route path="/route3" element={<Route3 />} />
+            <Route path="/herotwo" element={<Herotwo />} />
           </Routes>
         </BrowserRouter>
       </PersistGate>

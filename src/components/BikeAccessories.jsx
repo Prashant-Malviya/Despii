@@ -33,7 +33,7 @@ function BikeAccessories() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 lg:gap-10 content-center text-center">
             <div className="flex flex-col justify-center items-center">
-            <Link to="/route1">
+            <Link to="/">
               <img
                 src={helmetImg}
                 alt="helmet"

@@ -39,11 +39,7 @@ const Home = () => {
 
       </Helmet>
 
-     
-
-      
-
-      <Hero />
+      <Hero /> 
       <Features />
       <FeaturesMain />
       <WorkingExplainMain />
@@ -54,6 +50,8 @@ const Home = () => {
       <BikeAccessories />
       <Cta />
       <Footer />
+
+      
     </div>
   );
 };
